@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>desafio aluro #1</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+        <link href="index.css" rel="stylesheet">
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <div class="contenido">
+            <div class="left">
+                <div class="logo">
+                    <img src="img/logo.png" alt="logo">
+                </div>
+                <div class="texto">
+                    <textarea id="codigo" placeholder="ingresar texto aqui"></textarea>
+                </div>
+                <div class="botones">
+                    <div class="mensaje">
+                        <span class="advertencia">!</span> Solo letras minúsculas y sin acentos
+                    </div>
+                    <div class="cuadro">
+                        <button class="boton" onclick="encriptar();"><i class="fa-solid fa-lock"></i> Encriptar</button><button class="boton" onclick="desencriptar();"><i class="fa-solid fa-unlock"></i> Desencriptar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div>
+                    <div id="portada">
+                        <img class="imagen" src="img/imagen.png" alt="imagen">
+                        <div class="titulo">Ningún mensaje fue encontrado</div>
+                        <div class="subtitulo">Ingresa el texto que desees encriptar o desencriptar.</div>
+                    </div>
+                    <div id="oculto">
+                        <div id="arriba"></div>
+                        <div id="abajo"><button onclick="copiar();"><i class="fa-solid fa-copy"></i> COPIAR</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
